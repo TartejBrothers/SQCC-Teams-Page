@@ -4,6 +4,8 @@ module.exports = {
   theme: {
     screens: {
       lg: { max: "800px" },
+      lgs: { max: "600px" },
+      lgx: { max: "1200px" },
     },
     extend: {
       fontFamily: {

@@ -7,6 +7,7 @@ import MailIcon from "../assets/logos/Mail.png";
 export default function Team() {
   const [hoveredIndex, setHoveredIndex] = useState(-1);
   const [clickedIndex, setClickedIndex] = useState(-1);
+  const [isGreen, setIsGreen] = useState(0);
 
   const handleHover = (index) => {
     setHoveredIndex(index);
@@ -14,6 +15,7 @@ export default function Team() {
 
   const handleClick = (index) => {
     setClickedIndex(clickedIndex === index ? -1 : index);
+    setIsGreen(index === isGreen ? -1 : index);
   };
 
   return (
@@ -62,7 +64,7 @@ export default function Team() {
           <hr className="w-2/5 mx-10 border-2 border-header-green" />
         </div>
         <div className="flex flex-col">
-          <div className="flex flex-row font-Inter justify-around lg:flex-col lg:gap-10">
+          <div className="flex flex-row font-Inter justify-around lgs:flex-col lgs:gap-10">
             <ProfileCard
               index={3}
               hoveredIndex={hoveredIndex}
@@ -93,7 +95,7 @@ export default function Team() {
               onClick={handleClick}
             />
           </div>
-          <div className="flex flex-row font-Inter justify-around lg:flex-col lg:gap-10">
+          <div className="flex flex-row font-Inter justify-around lgs:flex-col lgs:gap-10">
             <ProfileCard
               index={6}
               hoveredIndex={hoveredIndex}
@@ -128,7 +130,7 @@ export default function Team() {
               mailUrl="mailto:"
             />
           </div>
-          <div className="flex flex-row font-Inter justify-around lg:flex-col lg:gap-10">
+          <div className="flex flex-row font-Inter justify-around lgs:flex-col lgs:gap-10">
             <ProfileCard
               index={9}
               hoveredIndex={hoveredIndex}
@@ -164,6 +166,48 @@ export default function Team() {
             />
           </div>
         </div>
+        <div className="flex flex-row justify-center font-Inter gap-10 font-semibold lgx:flex-col lgx:gap-5 lgx:align-center">
+          <div
+            className={`rounded-xl px-10 py-2 lgx:w-4/5 lgx:mx-auto text-center ${
+              isGreen === 0 ? "bg-header-green" : "bg-white"
+            }`}
+            onClick={() => handleClick(0)}
+          >
+            Core Quantum
+          </div>
+          <div
+            className={`rounded-xl px-10 py-2 lgx:w-4/5 lgx:mx-auto text-center ${
+              isGreen === 1 ? "bg-header-green" : "bg-white"
+            }`}
+            onClick={() => handleClick(1)}
+          >
+            Web Development
+          </div>
+          <div
+            className={`rounded-xl px-10 py-2 lgx:w-4/5 lgx:mx-auto text-center ${
+              isGreen === 2 ? "bg-header-green" : "bg-white"
+            }`}
+            onClick={() => handleClick(2)}
+          >
+            AI/ML
+          </div>
+          <div
+            className={`rounded-xl px-10 py-2 lgx:w-4/5 lgx:mx-auto text-center ${
+              isGreen === 3 ? "bg-header-green" : "bg-white"
+            }`}
+            onClick={() => handleClick(3)}
+          >
+            Editorial
+          </div>
+          <div
+            className={`rounded-xl px-10 py-2 lgx:w-4/5 lgx:mx-auto text-center ${
+              isGreen === 4 ? "bg-header-green" : "bg-white"
+            }`}
+            onClick={() => handleClick(4)}
+          >
+            Corporate
+          </div>
+        </div>
       </div>
     </div>
   );
@@ -196,7 +240,7 @@ function ProfileCard({
       >
         <img src="" alt="" />
       </div>
-      <div className="text-white text-center pt-10 pb-5">
+      <div className="text-white text-center pt-10 pb-5 font-Inter">
         <h1 className="text-4xl font-medium mb-2 lg:text-xl">Name</h1>
         <p className="text-2xl lg:text-xs ">Designation</p>
       </div>
