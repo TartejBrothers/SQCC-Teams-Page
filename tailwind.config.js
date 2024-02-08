@@ -6,11 +6,13 @@ module.exports = {
       fontFamily: {
         Bungee: ["Bungee Outline", "sans-serif"],
         Lato: ["Lato", "sans-serif"],
+        Inter: ["Inter", "sans-serif"],
       },
       colors: {
         "custom-dark": "#141313",
         "header-green": "#41FFB7",
         "content-bg": "#171720",
+        "fields-bg": "#67798A",
       },
     },
   },
