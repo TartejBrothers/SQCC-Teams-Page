@@ -166,7 +166,8 @@ export default function Team() {
             />
           </div>
         </div>
-        <div className="flex flex-row justify-center font-Inter gap-10 font-semibold lgx:flex-col lgx:gap-5 lgx:align-center">
+
+        <div className="flex flex-row justify-center font-Inter gap-10 font-semibold lgx:flex-col lgx:gap-5 lgx:align-center mb-20">
           <div
             className={`rounded-xl px-10 py-2 lgx:w-4/5 lgx:mx-auto text-center ${
               isGreen === 0 ? "bg-header-green" : "bg-white"
@@ -206,6 +207,100 @@ export default function Team() {
             onClick={() => handleClick(4)}
           >
             Corporate
+          </div>
+        </div>
+        <div className="flex flex-col">
+          <div className="flex flex-row font-Inter justify-around lgs:flex-col lgs:gap-10">
+            <ProfileCard
+              index={12}
+              hoveredIndex={hoveredIndex}
+              clickedIndex={clickedIndex}
+              onHover={handleHover}
+              onClick={handleClick}
+              linkedinUrl="https://www.linkedin.com/in/"
+              githubUrl="https://github.com/"
+              instagramUrl="https://www.instagram.com/"
+              mailUrl="mailto:"
+            />
+            <ProfileCard
+              index={13}
+              hoveredIndex={hoveredIndex}
+              clickedIndex={clickedIndex}
+              onHover={handleHover}
+              onClick={handleClick}
+              linkedinUrl="https://www.linkedin.com/in/"
+              githubUrl="https://github.com/"
+              instagramUrl="https://www.instagram.com/"
+              mailUrl="mailto:"
+            />
+            <ProfileCard
+              index={14}
+              hoveredIndex={hoveredIndex}
+              clickedIndex={clickedIndex}
+              onHover={handleHover}
+              onClick={handleClick}
+              linkedinUrl="https://www.linkedin.com/in/"
+              githubUrl="https://github.com/"
+              instagramUrl="https://www.instagram.com/"
+              mailUrl="mailto:"
+            />
+            <ProfileCard
+              index={15}
+              hoveredIndex={hoveredIndex}
+              clickedIndex={clickedIndex}
+              onHover={handleHover}
+              onClick={handleClick}
+              linkedinUrl="https://www.linkedin.com/in/"
+              githubUrl="https://github.com/"
+              instagramUrl="https://www.instagram.com/"
+              mailUrl="mailto:"
+            />
+          </div>
+          <div className="flex flex-row font-Inter justify-around lgs:flex-col lgs:gap-10">
+            <ProfileCard
+              index={16}
+              hoveredIndex={hoveredIndex}
+              clickedIndex={clickedIndex}
+              onHover={handleHover}
+              onClick={handleClick}
+              linkedinUrl="https://www.linkedin.com/in/"
+              githubUrl="https://github.com/"
+              instagramUrl="https://www.instagram.com/"
+              mailUrl="mailto:"
+            />
+            <ProfileCard
+              index={17}
+              hoveredIndex={hoveredIndex}
+              clickedIndex={clickedIndex}
+              onHover={handleHover}
+              onClick={handleClick}
+              linkedinUrl="https://www.linkedin.com/in/"
+              githubUrl="https://github.com/"
+              instagramUrl="https://www.instagram.com/"
+              mailUrl="mailto:"
+            />
+            <ProfileCard
+              index={18}
+              hoveredIndex={hoveredIndex}
+              clickedIndex={clickedIndex}
+              onHover={handleHover}
+              onClick={handleClick}
+              linkedinUrl="https://www.linkedin.com/in/"
+              githubUrl="https://github.com/"
+              instagramUrl="https://www.instagram.com/"
+              mailUrl="mailto:"
+            />
+            <ProfileCard
+              index={19}
+              hoveredIndex={hoveredIndex}
+              clickedIndex={clickedIndex}
+              onHover={handleHover}
+              onClick={handleClick}
+              linkedinUrl="https://www.linkedin.com/in/"
+              githubUrl="https://github.com/"
+              instagramUrl="https://www.instagram.com/"
+              mailUrl="mailto:"
+            />
           </div>
         </div>
       </div>
