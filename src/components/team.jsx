@@ -19,10 +19,10 @@ export default function Team() {
   return (
     <div>
       <div className="bg-custom-dark">
-        <h1 className="text-header-green font-Bungee text-9xl text-center px-20 py-20">
+        <h1 className="text-header-green font-Bungee text-9xl text-center px-20 py-20 lg:text-6xl">
           SQCC
         </h1>
-        <h2 className="text-5xl mt-[-120px] text-center text-white z-10 pb-20 font-Lato">
+        <h2 className="text-5xl mt-[-120px] text-center text-white z-10 pb-20 font-Lato lg:text-xl lg:mt-[-110px]">
           MEET THE TEAM
         </h2>
       </div>
@@ -61,47 +61,108 @@ export default function Team() {
           <p className="text-4xl font-Lato">HEADS</p>
           <hr className="w-2/5 mx-10 border-2 border-header-green" />
         </div>
-        <div className="flex flex-row font-Inter justify-around">
-          <ProfileCard
-            index={3}
-            hoveredIndex={hoveredIndex}
-            clickedIndex={clickedIndex}
-            onHover={handleHover}
-            onClick={handleClick}
-            linkedinUrl="https://www.linkedin.com/in/"
-            githubUrl="https://github.com/"
-            instagramUrl="https://www.instagram.com/"
-            mailUrl="mailto:"
-          />
-          <ProfileCard
-            index={4}
-            hoveredIndex={hoveredIndex}
-            clickedIndex={clickedIndex}
-            onHover={handleHover}
-            onClick={handleClick}
-            linkedinUrl="https://www.linkedin.com/in/"
-            githubUrl="https://github.com/"
-            instagramUrl="https://www.instagram.com/"
-            mailUrl="mailto:"
-          />
-          <ProfileCard
-            index={4}
-            hoveredIndex={hoveredIndex}
-            clickedIndex={clickedIndex}
-            onHover={handleHover}
-            onClick={handleClick}
-          />
-          <ProfileCard
-            index={5}
-            hoveredIndex={hoveredIndex}
-            clickedIndex={clickedIndex}
-            onHover={handleHover}
-            onClick={handleClick}
-            linkedinUrl="https://www.linkedin.com/in/"
-            githubUrl="https://github.com/"
-            instagramUrl="https://www.instagram.com/"
-            mailUrl="mailto:"
-          />
+        <div className="flex flex-col">
+          <div className="flex flex-row font-Inter justify-around lg:flex-col lg:gap-10">
+            <ProfileCard
+              index={3}
+              hoveredIndex={hoveredIndex}
+              clickedIndex={clickedIndex}
+              onHover={handleHover}
+              onClick={handleClick}
+              linkedinUrl="https://www.linkedin.com/in/"
+              githubUrl="https://github.com/"
+              instagramUrl="https://www.instagram.com/"
+              mailUrl="mailto:"
+            />
+            <ProfileCard
+              index={4}
+              hoveredIndex={hoveredIndex}
+              clickedIndex={clickedIndex}
+              onHover={handleHover}
+              onClick={handleClick}
+              linkedinUrl="https://www.linkedin.com/in/"
+              githubUrl="https://github.com/"
+              instagramUrl="https://www.instagram.com/"
+              mailUrl="mailto:"
+            />
+            <ProfileCard
+              index={5}
+              hoveredIndex={hoveredIndex}
+              clickedIndex={clickedIndex}
+              onHover={handleHover}
+              onClick={handleClick}
+            />
+          </div>
+          <div className="flex flex-row font-Inter justify-around lg:flex-col lg:gap-10">
+            <ProfileCard
+              index={6}
+              hoveredIndex={hoveredIndex}
+              clickedIndex={clickedIndex}
+              onHover={handleHover}
+              onClick={handleClick}
+              linkedinUrl="https://www.linkedin.com/in/"
+              githubUrl="https://github.com/"
+              instagramUrl="https://www.instagram.com/"
+              mailUrl="mailto:"
+            />
+            <ProfileCard
+              index={7}
+              hoveredIndex={hoveredIndex}
+              clickedIndex={clickedIndex}
+              onHover={handleHover}
+              onClick={handleClick}
+              linkedinUrl="https://www.linkedin.com/in/"
+              githubUrl="https://github.com/"
+              instagramUrl="https://www.instagram.com/"
+              mailUrl="mailto:"
+            />
+            <ProfileCard
+              index={8}
+              hoveredIndex={hoveredIndex}
+              clickedIndex={clickedIndex}
+              onHover={handleHover}
+              onClick={handleClick}
+              linkedinUrl="https://www.linkedin.com/in/"
+              githubUrl="https://github.com/"
+              instagramUrl="https://www.instagram.com/"
+              mailUrl="mailto:"
+            />
+          </div>
+          <div className="flex flex-row font-Inter justify-around lg:flex-col lg:gap-10">
+            <ProfileCard
+              index={9}
+              hoveredIndex={hoveredIndex}
+              clickedIndex={clickedIndex}
+              onHover={handleHover}
+              onClick={handleClick}
+              linkedinUrl="https://www.linkedin.com/in/"
+              githubUrl="https://github.com/"
+              instagramUrl="https://www.instagram.com/"
+              mailUrl="mailto:"
+            />
+            <ProfileCard
+              index={10}
+              hoveredIndex={hoveredIndex}
+              clickedIndex={clickedIndex}
+              onHover={handleHover}
+              onClick={handleClick}
+              linkedinUrl="https://www.linkedin.com/in/"
+              githubUrl="https://github.com/"
+              instagramUrl="https://www.instagram.com/"
+              mailUrl="mailto:"
+            />
+            <ProfileCard
+              index={11}
+              hoveredIndex={hoveredIndex}
+              clickedIndex={clickedIndex}
+              onHover={handleHover}
+              onClick={handleClick}
+              linkedinUrl="https://www.linkedin.com/in/"
+              githubUrl="https://github.com/"
+              instagramUrl="https://www.instagram.com/"
+              mailUrl="mailto:"
+            />
+          </div>
         </div>
       </div>
     </div>
@@ -129,18 +190,18 @@ function ProfileCard({
       onClick={() => onClick(index)}
     >
       <div
-        className={`text-white h-40 w-40 rounded-lg shadow-2xl bg-fields-bg ${
+        className={`text-white h-40 w-40 rounded-lg shadow-2xl bg-fields-bg lg:h-20 lg:w-20 ${
           isHovered ? "transform scale-110 transition-transform" : ""
         }`}
       >
         <img src="" alt="" />
       </div>
       <div className="text-white text-center pt-10 pb-5">
-        <h1 className="text-4xl font-medium mb-2">Name</h1>
-        <p className="text-2xl ">Designation</p>
+        <h1 className="text-4xl font-medium mb-2 lg:text-xl">Name</h1>
+        <p className="text-2xl lg:text-xs ">Designation</p>
       </div>
       <div
-        className="flex flex-row"
+        className="flex flex-row lg:w-20"
         id="social-media"
         style={{
           opacity: isHovered ? 1 : 0,

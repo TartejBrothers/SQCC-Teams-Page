@@ -2,6 +2,9 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
+    screens: {
+      lg: { max: "800px" },
+    },
     extend: {
       fontFamily: {
         Bungee: ["Bungee Outline", "sans-serif"],
