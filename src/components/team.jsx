@@ -10,6 +10,13 @@ export default function team() {
           MEET THE TEAM
         </h2>
       </div>
+      <div className="bg-content-bg">
+        <div className="flex flex-row items-center justify-center text-center text-white py-20">
+          <hr className="w-2/5 mx-10 border-2 border-header-green" />
+          <p className="text-4xl font-Lato">CORE</p>
+          <hr className="w-2/5 mx-10 border-2 border-header-green" />
+        </div>
+      </div>
     </div>
   );
 }
