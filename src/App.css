@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Bungee+Outline&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 /*
 ! tailwindcss v3.4.1 | MIT License | https://tailwindcss.com
 */
@@ -550,28 +552,28 @@ video {
   margin-top: -120px;
 }
 
-.mt-10{
-  margin-top: 2.5rem;
+.mb-10{
+  margin-bottom: 2.5rem;
+}
+
+.mb-5{
+  margin-bottom: 1.25rem;
 }
 
 .flex{
   display: flex;
 }
 
-.w-3\/4{
-  width: 75%;
-}
-
-.w-80{
-  width: 20rem;
-}
-
-.w-0{
-  width: 0px;
+.h-40{
+  height: 10rem;
 }
 
 .w-2\/5{
   width: 40%;
+}
+
+.w-40{
+  width: 10rem;
 }
 
 .flex-row{
@@ -590,13 +592,16 @@ video {
   justify-content: center;
 }
 
-.border-2{
-  border-width: 2px;
+.justify-around{
+  justify-content: space-around;
 }
 
-.border-red-500{
-  --tw-border-opacity: 1;
-  border-color: rgb(239 68 68 / var(--tw-border-opacity));
+.rounded-lg{
+  border-radius: 0.5rem;
+}
+
+.border-2{
+  border-width: 2px;
 }
 
 .border-header-green{
@@ -604,19 +609,19 @@ video {
   border-color: rgb(65 255 183 / var(--tw-border-opacity));
 }
 
-.bg-custom-dark{
-  --tw-bg-opacity: 1;
-  background-color: rgb(20 19 19 / var(--tw-bg-opacity));
-}
-
 .bg-content-bg{
   --tw-bg-opacity: 1;
   background-color: rgb(23 23 32 / var(--tw-bg-opacity));
 }
 
-.bg-header-green{
+.bg-custom-dark{
   --tw-bg-opacity: 1;
-  background-color: rgb(65 255 183 / var(--tw-bg-opacity));
+  background-color: rgb(20 19 19 / var(--tw-bg-opacity));
+}
+
+.bg-fields-bg{
+  --tw-bg-opacity: 1;
+  background-color: rgb(103 121 138 / var(--tw-bg-opacity));
 }
 
 .px-20{
@@ -627,6 +632,11 @@ video {
 .py-20{
   padding-top: 5rem;
   padding-bottom: 5rem;
+}
+
+.py-10{
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .pb-20{
@@ -645,6 +655,20 @@ video {
   font-family: Lato, sans-serif;
 }
 
+.font-Inter{
+  font-family: Inter, sans-serif;
+}
+
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-4xl{
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
 .text-5xl{
   font-size: 3rem;
   line-height: 1;
@@ -655,9 +679,8 @@ video {
   line-height: 1;
 }
 
-.text-4xl{
-  font-size: 2.25rem;
-  line-height: 2.5rem;
+.font-medium{
+  font-weight: 500;
 }
 
 .text-header-green{
@@ -668,6 +691,12 @@ video {
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.shadow-2xl{
+  --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 body {
