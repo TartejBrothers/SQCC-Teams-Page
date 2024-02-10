@@ -340,7 +340,7 @@ function ProfileCard({
         <p className="text-2xl lg:text-xs ">Designation</p>
       </div>
       <div
-        className="flex flex-row lg:w-20"
+        className="flex flex-row lg:w-20 mb-10"
         id="social-media"
         style={{
           opacity: isHovered ? 1 : 0,
